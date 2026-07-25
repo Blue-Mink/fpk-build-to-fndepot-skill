@@ -1,6 +1,6 @@
 ---
 name: fpk-build-to-fndepot
-description: Full-pipeline skill for fnOS FPK development → FnDepot publishing. Merges jianyun8023's official FPK development spec (manifest/lifecycle/privilege/resource/wizard/desktop-UI/environment-variables/error-handling) with FnDepot v1.1.1 store protocol (fndepot.json/multi-arch/ICON/Preview/Release) and real-world battle-tested pitfalls from TREK/global-radio/fn-knock deployments. Covers: FPK project scaffolding → packaging (fnpack/fpk.py) → local install verification → FnDepot repo publishing → GitHub Release → CI automation + troubleshooting. Trigger when users say: build fpk, publish to FnDepot, 打包 fpk, 发布到应用商店, fndepot 发布, fnOS 应用打包, fpk 构建发布, fpk 开发, 飞牛应用开发.
+description: "Full-pipeline skill for fnOS FPK development to FnDepot publishing. Merges jianyun8023's official FPK development spec (manifest/lifecycle/privilege/resource/wizard/desktop-UI/environment-variables/error-handling) with FnDepot v1.1.1 store protocol (fndepot.json/multi-arch/ICON/Preview/Release) and real-world battle-tested pitfalls from TREK/global-radio/fn-knock deployments. Covers FPK project scaffolding, packaging (fnpack/fpk.py), local install verification, FnDepot repo publishing, GitHub Release, CI automation, and troubleshooting. Trigger when users say: build fpk, publish to FnDepot, 打包 fpk, 发布到应用商店, fndepot 发布, fnOS 应用打包, fpk 构建发布, fpk 开发, 飞牛应用开发."
 ---
 
 # 从构建 FPK 到发布至 FnDepot 开源商店 — 全链路 Skill
