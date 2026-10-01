@@ -11,11 +11,15 @@ FPK（飞牛应用包）是 [fnOS](https://www.fnnas.com/) 的第三方应用打
 | 章节 | 内容 |
 |------|------|
 | **一、全链路总览** | 7 步流程图：分析→骨架→构建→测试→发布→Release→CI |
-| **二、FnDepot 开源商店协议** | 仓库规范、目录结构、fndepot.json 字段详解、架构匹配规则 |
-| **三、FPK 构建规范（完整版）** | 开发目录结构、manifest 字段、环境变量表、cmd/main 脚本模板、权限/资源声明、wizard 向导、桌面 UI、实战五大坑点 |
-| **四、操作流程** | 分析→版本号→自动化构建→手动构建→安装测试→FnDepot 发布→GitHub Release→版本更新 |
-| **五、故障排查** | 构建/安装/运行时/FnDepot 商店四类常见问题系统化排查 |
-| **六、快捷查询** | 命令速查表、发布前检查清单、README 模板 |
+| **按需路由** | 场景 → 对应 reference 文件（协议/构建规范/操作流程/排查） |
+| **核心坑点速览** | 实战五大坑点（wizard/-e、CRC32、volume 变量、Cookie、容器重建） |
+| **3.17 Go 原生构建链** | build.sh 流水线（版本单一源/前端嵌入/交叉编译/staging 平铺）+ 6 条硬约束 |
+| **4.9 高频迭代部署** | 热替换 / daemon RPC 就地升级 / 卸载重装三态 + 发版约定 |
+| **命令速查** | 构建/安装/状态/Release 常用命令表 |
+| **references/fndepot-protocol.md** | FnDepot **V2 协议**：fnpack.json 结构、releases 多版本、固定分类、i18n、拆分模式、V2 检查清单、V1→V2 迁移、合格源机制 |
+| **references/fpk-build-spec.md** | 开发目录结构、manifest 字段、环境变量表、cmd 脚本模板、权限/资源、wizard、桌面 UI、docker-compose 模板 |
+| **references/workflow.md** | 分析→版本号→构建→安装测试→FnDepot 发布→GitHub Release→版本更新逐步操作 |
+| **references/troubleshooting.md** | 构建/安装/部署换版/运行时/FnDepot 商店五阶段排查表 |
 
 ---
 
@@ -31,10 +35,10 @@ FPK（飞牛应用包）是 [fnOS](https://www.fnnas.com/) 的第三方应用打
 
 本 Skill 融合了四大来源的精华：
 
-1. **[jianyun8023/fnos-fpk-dev](https://github.com/jianyun8023/my-skills/tree/main/skills/tooling/fnos-fpk-dev)** — 官方 FPK 开发规范
+1. **官方 FPK 开发规范**（开源 skill 参考，仓库名已脱敏）
 2. **[EWEDLCM/FnDepot](https://github.com/EWEDLCM/FnDepot)** v1.1.1 — 开源商店协议
-3. **[kci-lnk/fn-fpk-builder-skill](https://github.com/kci-lnk/fn-fpk-builder-skill)** — 自动化构建/审计工具链
-4. **实战踩坑** — TREK / global-radio / fn-knock / kms-activator 的完整打包发布经验
+3. **[kci-lnk/fn-fpk-builder-skill](https://github.com/kci-lnk/fn-fpk-builder-skill)** — 自动化构建/审计/部署工具链（MIT）
+4. **实战踩坑** — 某 4 个实战应用 的完整打包发布经验
 
 ---
 
@@ -68,10 +72,10 @@ mkdir -p my-app-fpk/{cmd,config,wizard,app/ui/images}
 
 | 仓库 | 说明 |
 |------|------|
-| [Blue-Mink/FnDepot](https://github.com/Blue-Mink/FnDepot) | 实战案例：TREK / global-radio / fn-knock / kms-activator 已入库 |
+| 某社区 FnDepot 商店仓库 | 实战案例：4 个实战应用打包发布全过程经验来源 |
 | [kci-lnk/fn-fpk-builder-skill](https://github.com/kci-lnk/fn-fpk-builder-skill) | 自动化 FPK 构建工具（fpk.py） |
 | [EWEDLCM/FnDepot](https://github.com/EWEDLCM/FnDepot) | FnDepot 开源商店协议与客户端 |
-| [jianyun8023/my-skills](https://github.com/jianyun8023/my-skills) | 官方 FPK 开发规范 |
+| 官方 FPK 开发规范 skill（已脱敏） | 官方 FPK 开发规范 |
 
 ---
 
