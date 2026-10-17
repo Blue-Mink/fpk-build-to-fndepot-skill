@@ -1,6 +1,7 @@
 ---
 name: fpk-build-to-fndepot
 description: "从构建 FPK 到发布 FnDepot 开源商店的全流水线：V2 商店协议（fnpack.json/schema_version/releases 多版本结构）、合格源机制、GitHub Release。触发：发布到应用商店、fndepot 发布、fnpack.json、fnOS 应用上架、FPK 商店发布。构建/打包/审计/部署阶段请用 fn-fpk-builder-skill 工具链。"
+---
 
 # 从构建 FPK 到发布至 FnDepot 开源商店 — 全链路 Skill
 
