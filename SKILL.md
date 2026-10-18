@@ -5,7 +5,7 @@ description: "从构建 FPK 到发布 FnDepot 开源商店的全流水线：V2 �
 
 # 从构建 FPK 到发布至 FnDepot 开源商店 — 全链路 Skill
 
-> 整合来源：官方 FPK 开发规范（开源 skill 参考）+ EWEDLCM/FnDepot v1.1.1 协议 + kci-lnk/fn-fpk-builder-skill 工具链 + 4 个实战应用全过程经验。
+> 整合来源：官方 FPK 开发规范（开源 skill 参考）+ EWEDLCM/FnDepot V2 协议（`fnpack.json` + `schema_version:"2"`，V1 已废弃倒计时） + kci-lnk/fn-fpk-builder-skill 工具链 + 4 个实战应用全过程经验。
 > **构建/打包/审计/远程部署的权威工具链与规范在 `fn-fpk-builder` 技能**（其 `scripts/fpk.py`、`references/official-contract.md` 等）；本技能聚焦 **商店发布流水线 + 高频迭代部署**。
 
 ## 一、全链路总览
@@ -184,7 +184,7 @@ sha256sum "$SCRIPT_DIR/app_${VERSION}_x86.fpk"
 ## 📜 引用与致谢
 
 - **官方 FPK 开发规范** — 开源 skill 参考（仓库名已脱敏）
-- **EWEDLCM/FnDepot** — [GitHub](https://github.com/EWEDLCM/FnDepot)，协议 v1.1.1
+- **EWEDLCM/FnDepot** — [GitHub](https://github.com/EWEDLCM/FnDepot)，协议 **V2**（`fnpack.json` + `schema_version:"2"`）
 - **kci-lnk/fn-fpk-builder-skill** — [GitHub](https://github.com/kci-lnk/fn-fpk-builder-skill)，MIT
 - 实战案例：4 个实战应用的打包发布全过程（已入库某社区 FnDepot 商店，仓库名已脱敏）
 - 官方文档：[fnOS Developer Center](https://dev.fnnas.net/)

@@ -36,7 +36,7 @@ FPK（飞牛应用包）是 [fnOS](https://www.fnnas.com/) 的第三方应用打
 本 Skill 融合了四大来源的精华：
 
 1. **官方 FPK 开发规范**（开源 skill 参考，仓库名已脱敏）
-2. **[EWEDLCM/FnDepot](https://github.com/EWEDLCM/FnDepot)** v1.1.1 — 开源商店协议
+2. **[EWEDLCM/FnDepot](https://github.com/EWEDLCM/FnDepot)** 协议 V2（`fnpack.json` + `schema_version:"2"`；V1 已废弃倒计时） — 开源商店协议
 3. **[kci-lnk/fn-fpk-builder-skill](https://github.com/kci-lnk/fn-fpk-builder-skill)** — 自动化构建/审计/部署工具链（MIT）
 4. **实战踩坑** — 某 4 个实战应用 的完整打包发布经验
 
